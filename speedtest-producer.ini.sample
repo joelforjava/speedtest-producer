@@ -1,0 +1,13 @@
+[DEFAULT]
+speedtest_command = /full/path/to/speedtest
+
+[KAFKA]
+enabled = no
+bootstrap.brokers = kafka-broker:9092
+client.id = your-client-id
+topic = ISP-SPEEDTEST-RESULTS
+key = your-key
+
+[BACKUP]
+enabled = yes
+file_path = /full/path/to/your/speedtest-producer/logs/results.log
